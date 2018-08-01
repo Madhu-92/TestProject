@@ -1,2 +1,4 @@
-# First Program
+"""
+Basic program.
+"""
 print("Hello world!")
