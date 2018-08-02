@@ -11,5 +11,5 @@ def main():
                 var_b = var_a[i:i+3]
                 if var_b == "bob":
                         count += 1
-    print("Number of times bob occurs" + str(count)) 
+    print(count) 
 main()
