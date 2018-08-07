@@ -17,8 +17,9 @@ def sumofdigits(var_n):
         return (var_n % 10) + sumofdigits(var_n // 10)
 
 def main():
-    a = input()
-    print(sumofdigits(int(a)))  
+	'''main function'''
+    var_a = input()
+    print(sumofdigits(int(var_a)))
 
 if __name__ == "__main__":
     main()
