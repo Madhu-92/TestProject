@@ -2,7 +2,6 @@
 Assignment-3-Using Bisection Search to Make the Program Faster
 '''
 def payingdebtoffinayear(balance, air):
-	#
     monthly_interest_rate = (air) / 12.0
     monthly_payment_lower_bound = balance / 12
     monthly_payment_upper_bound = (balance * (1 + monthly_interest_rate)**12) / 12.0
