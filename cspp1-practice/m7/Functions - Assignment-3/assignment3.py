@@ -1,7 +1,8 @@
 '''
-Assignment-3-Using Bisection Search to Make the Program Faster
+Functions - Assignment-3 - Using Bisection Search to Make the Program Faster
 '''
 def payingdebtoffinayear(balance, air):
+
     monthly_interest_rate = (air) / 12.0
     monthly_payment_lower_bound = balance / 12
     monthly_payment_upper_bound = (balance * (1 + monthly_interest_rate)**12) / 12.0
@@ -24,13 +25,12 @@ def payingdebtoffinayear(balance, air):
             return guess
 
         guess = (monthly_payment_lower_bound + monthly_payment_upper_bound)/2
-
 def main():
-    ''' main function '''
+    '''main function'''
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
     data = list(map(float, data))
-    print("Lowest Payment:"+ str(round(payingdebtoffinayear(data[0], data[1]), 2)))
+    print("Lowest Payment: " + str(round(payingdebtoffinayear(data[0], data[1]), 2)))    
 if __name__ == "__main__":
     main()
