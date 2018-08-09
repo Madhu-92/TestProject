@@ -17,5 +17,5 @@ def main():
         list1.append(int(j))
     print(apply_to_each(list1, square))
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()

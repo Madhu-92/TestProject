@@ -7,7 +7,7 @@ secret_word are in letters_guessed) and False otherwise.
 '''
 
 
-def is_word_guessed(secret_word, letters_guessed):
+def iswordguessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
     letters_guessed: list, what letters have been guessed so far
@@ -24,6 +24,7 @@ def is_word_guessed(secret_word, letters_guessed):
     if count == len(secret_word):
         return True
     return False
+
 def main():
     '''Main function'''
     user_input = input()
@@ -36,7 +37,7 @@ def main():
     list1 = []
     for j in range(1, len(data)):
         list1.append(data[j][0])
-    print(is_word_guessed(secret_word, list1))
+    print(iswordguessed(secret_word, list1))
 
 if __name__ == "__main__":
     main()
