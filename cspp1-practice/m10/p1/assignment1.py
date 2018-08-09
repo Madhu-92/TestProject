@@ -12,13 +12,13 @@ def get_available_letters(letters_guessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    a = list("abcdefghijklmnopqrstuvwxyz")
-    b = sorted(letters_guessed)
-    acopy = a[:]
+    var_a = list("abcdefghijklmnopqrstuvwxyz")
+    var_b = sorted(letters_guessed)
+    acopy = var_a[:]
     for i in acopy:
-        if i in b:
-            a.remove(i)
-    return ''.join(a)
+        if i in var_b:
+            var_a.remove(i)
+    return ''.join(var_a)
 
 
 
