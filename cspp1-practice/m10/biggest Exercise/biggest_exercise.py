@@ -20,7 +20,7 @@ def biggest(aDict):
         if len(aDict[a]) >= b:
             b = len(aDict[a])
             c = a
-    return str(c)
+    return c
 
 def main():
     n=input()
