@@ -33,7 +33,9 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    var_a = data.split("follows")
+    var_a = data.splitlines(int("follows"))
+    var_a = data.splitlines(" , ")
+    print(var_a)
     var_dict = {}
     for i in range(len(var_a)):
         var_l = var_a[i].split(" ")

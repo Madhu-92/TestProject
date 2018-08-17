@@ -6,7 +6,7 @@ Exercise: Assignment-2
 #be sure you've passed the appropriate tests in test_ps4a.py.
 
 
-def updateHand(hand, word):
+def updatehand(hand, word):
     """
     Assumes that 'hand' has all the letters in word.
     In other words, this assumes that however many times
@@ -35,7 +35,7 @@ def main():
         l = data.split()
         adict[l[0]] = int(l[1])
     data1 = input()
-    print(updateHand(adict,data1))
+    print(updatehand(adict,data1))
 
 if __name__ == "__main__":
     main()
