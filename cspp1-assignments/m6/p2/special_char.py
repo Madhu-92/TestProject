@@ -8,13 +8,12 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = str(input())
-    i=
+    var_i = ""
     for char in str_input:
-        if char == '!' or char == '@' or char == '#' or char == '$' or char == '^' or char == '&' or char == '*':
-           if 
-main()
-
-
-"""
-
-"""
+        if char in "!@#$%^&*":
+            var_i += " "
+        else:
+            var_i += char
+    print(var_i)
+if __name__ == '__main__':
+    main()
