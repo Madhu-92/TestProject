@@ -19,13 +19,13 @@ def check_sudoku(sudoku):
         l = sorted(l)
         if (l != var_l):
             return False
-        else:
-            for i in range(9):
-                for j in range(9):
-                    l.append(sudoku[j][i])
-            if(l != var_l):
-                return False
-            return True
+        
+        for i in range(9):
+            for j in range(9):
+                l.append(sudoku[j][i])
+        if(l != var_l):
+            return False
+        return True
 
 def main():
     '''
