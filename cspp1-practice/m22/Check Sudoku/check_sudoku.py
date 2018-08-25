@@ -13,9 +13,11 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    if len(sudoku) == 9:
+    l1 = ['123456789']
+    if len(sudoku) == 9 and l1 not in sudoku:
         return True
     return False
+
 def main():
     '''
         main function to read input sudoku from console
