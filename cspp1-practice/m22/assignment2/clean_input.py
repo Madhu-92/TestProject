@@ -7,7 +7,7 @@ import re
 def clean_string(string):
     '''clean function'''
     input_string = string
-    var_a = re.compile('[^a-z]', '')
+    var_a = re.compile('^[a-zA-Z0-9]')
     input_string = var_a.sub('', input_string)
     return input_string
 
