@@ -9,7 +9,7 @@ def clean_string(string):
     var_a = string
     regex = re.compile("[^a-zA-Z0-9]")
     var_a = regex.sub('', var_a)
-    return input_string
+    return var_a
 
 def main():
     '''main function'''
