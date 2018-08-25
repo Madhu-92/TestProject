@@ -6,9 +6,9 @@ alphabets in both upper and lower case and numbers.
 import re
 def clean_string(string):
     '''clean function'''
-    input_string = string
-    var_a = re.compile('^[a-zA-Z0-9]')
-    input_string = var_a.sub('', input_string)
+    var_a = string
+    regex = re.compile("[^a-zA-Z0-9]")
+    var_a = regex.sub('', var_a)
     return input_string
 
 def main():
