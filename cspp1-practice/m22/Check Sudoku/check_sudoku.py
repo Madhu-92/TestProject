@@ -13,10 +13,19 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    l1 = ['123456789']
-    if len(sudoku) == 9 and l1 not in sudoku:
-        return True
-    return False
+    var_l = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    for i in range(9):
+        l = sudoku[i]
+        l = sorted(l)
+        if (l!=var_l):
+            return False
+        else:
+            for i in range(9):
+                for j in range(9):
+                    l.append(grid[j][i])
+            if(l!=var_l):
+                return False
+            return True
 
 def main():
     '''
