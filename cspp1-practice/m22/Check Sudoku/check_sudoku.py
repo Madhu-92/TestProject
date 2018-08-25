@@ -22,7 +22,7 @@ def check_sudoku(sudoku):
         else:
             for i in range(9):
                 for j in range(9):
-                    l.append(grid[j][i])
+                    l.append(sudoku[j][i])
             if(l!=var_l):
                 return False
             return True
