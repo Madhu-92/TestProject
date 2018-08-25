@@ -17,13 +17,13 @@ def check_sudoku(sudoku):
     for i in range(9):
         l = sudoku[i]
         l = sorted(l)
-        if (l!=var_l):
+        if (l != var_l):
             return False
         else:
             for i in range(9):
                 for j in range(9):
                     l.append(sudoku[j][i])
-            if(l!=var_l):
+            if(l != var_l):
                 return False
             return True
 
