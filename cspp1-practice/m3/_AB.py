@@ -1,6 +1,6 @@
 varA = input("Enter the input for A: ")
 varB = input("Enter the input for B: ")
-if type(varA) == type(str) or type(varB) == type(str):
+if type(varA) == str or type(varB) == str:
     print("string involved")
 elif varA>varB:
     print("bigger")
