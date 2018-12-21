@@ -4,10 +4,9 @@ def chunkstring(string, length):
 def main():
     a = input()
     b = list(chunkstring(a, 9))
-    try:
-      print(len(a))
-    except:
-      print("An exception occurred")
+    c = len(a)
+    if c==81:
+      print("Given sudoku is solved")
     
 if __name__ == '__main__':
     main()
