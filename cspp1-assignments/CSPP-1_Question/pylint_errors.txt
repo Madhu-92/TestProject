@@ -1,0 +1,16 @@
+************* Module sudoku
+sudoku.py:8:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+sudoku.py:10:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+sudoku.py:11:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoku.py:13:0: C0304: Final newline missing (missing-final-newline)
+sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
+sudoku.py:1:0: C0111: Missing function docstring (missing-docstring)
+sudoku.py:4:0: C0111: Missing function docstring (missing-docstring)
+sudoku.py:5:4: C0103: Variable name "a" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:6:4: C0103: Variable name "b" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:9:4: W0702: No exception type(s) specified (bare-except)
+sudoku.py:6:4: W0612: Unused variable 'b' (unused-variable)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
